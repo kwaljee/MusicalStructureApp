@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        style="@style/mainMenuStyle">
+
+        <TextView
+            android:id="@+id/music_library"
+            style="@style/mainMenuText"
+            android:text="Music Library" />
+
+        <TextView
+            android:id="@+id/now_playing"
+            style="@style/mainMenuText"
+            android:text="Now Playing" />
+
+        <TextView
+            android:id="@+id/browse_stations"
+            style="@style/mainMenuText"
+            android:text="Browse Stations" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainMenu"
+        android:contentDescription="@string/album_cover_art"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_album_art" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        style="@style/artistInfoNowPlaying"
+        android:layout_below="@+id/album_cover" />
+
+    <TextView
+        android:id="@+id/track_name"
+        style="@style/trackInfoNowPlaying"
+        android:layout_below="@+id/artist_name" />
+
+    <TextView
+        style="@style/textViewDescriptionTag"
+        android:layout_above="@+id/artist_name"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/now_playing_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/media_controls"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

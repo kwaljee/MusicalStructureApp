@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="search_library">Search Library</string>
+    <string name="album_art_placeholder">album art placeholder</string>
+    <string name="album_art_placeholder2">album art placeholder</string>
+    <string name="album_art_placeholder3">album art placeholder</string>
+    <string name="music_library_description">This activity displays all items in a library including album cover, artist name (Item), and song name (subitem). External libraries will be needed to list items in the view as well as to search items via text or voice.</string>
+    <string name="now_playing_description">This activity displays all current information for the current track and artist that is being played. External libraries to pull information from the library such as album art and track information will need to be pulled from a database.</string>
+    <string name="browse_stations_description">This activity allows user to search stations or related music from the Internet. External libraries will be needed to connect to the network and search entries on an external database.</string>
+    <string name="album_cover_art">album cover art</string>
+    <string name="search_stations">Search Stations</string>
+    <string name="media_controls_browse_stations">media controls browse stations</string>
+</resources>

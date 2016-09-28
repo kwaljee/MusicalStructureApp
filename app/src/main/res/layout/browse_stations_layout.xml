@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        style="@style/mainMenuStyle">
+
+        <TextView
+            android:id="@+id/music_library"
+            style="@style/mainMenuText"
+            android:text="Music Library" />
+
+        <TextView
+            android:id="@+id/now_playing"
+            style="@style/mainMenuText"
+            android:text="Now Playing" />
+
+        <TextView
+            android:id="@+id/browse_stations"
+            style="@style/mainMenuText"
+            android:text="Browse Stations" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mainMenu"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:drawableRight="@android:drawable/ic_btn_speak_now"
+        android:hint="@string/search_stations"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <TextView
+        style="@style/textViewDescriptionTag"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/browse_stations_description" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/media_controls_browse_stations"
+        android:src="@drawable/media_controls" />
+
+</RelativeLayout>

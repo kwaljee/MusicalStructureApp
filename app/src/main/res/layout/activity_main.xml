@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/mainMenu"
+        style="@style/mainMenuStyle">
+
+        <TextView
+            android:id="@+id/music_library"
+            style="@style/mainMenuText"
+            android:text="Music Library" />
+
+        <TextView
+            android:id="@+id/now_playing"
+            style="@style/mainMenuText"
+            android:text="Now Playing" />
+
+        <TextView
+            android:id="@+id/browse_stations"
+            style="@style/mainMenuText"
+            android:text="Browse Stations" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/search_library"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainMenu"
+        android:layout_marginBottom="6dp"
+        android:drawableLeft="@android:drawable/ic_search_category_default"
+        android:drawableRight="@android:drawable/ic_btn_speak_now"
+        android:hint="@string/search_library"
+        android:singleLine="true"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/art_info_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_library"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/album_art"
+            android:layout_width="wrap_content"
+            android:layout_height="181dp"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/albumArt"
+                android:contentDescription="@string/album_art_placeholder" />
+
+            <ImageView
+                style="@style/albumArt"
+                android:contentDescription="@string/album_art_placeholder2" />
+
+            <ImageView
+                style="@style/albumArt"
+                android:contentDescription="@string/album_art_placeholder3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/artistInfo" />
+
+            <TextView style="@style/trackInfo" />
+
+            <TextView style="@style/artistInfo" />
+
+            <TextView style="@style/trackInfo" />
+
+            <TextView style="@style/artistInfo" />
+
+            <TextView style="@style/trackInfo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        style="@style/textViewDescriptionTag"
+        android:text="@string/music_library_description"
+        android:layout_below="@+id/art_info_wrapper"
+        android:layout_centerHorizontal="true" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/media_controls"
+        android:contentDescription="@string/media_controls_browse_stations"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
